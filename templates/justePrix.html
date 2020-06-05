@@ -1,0 +1,65 @@
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/static/justePrix.css">
+
+<!-- Nav -->
+<header id="header" role="banner" class="main-header">
+   <div class="header-inner">         
+           <div class="header-logo">
+                   <img src="/static/Logo.png" alt="logo" width="47" height="47">
+           </div>
+           
+           <nav class="header-nav">    
+                   <label id="titre_juste_prix">Juste prix</label>                            
+                   <ul>
+                           <li><a id="start_partie">Commencer une partie</a></li>  
+                           <label>Niveau de difficulté : </label>
+                           <select name="niveau" id="niveau">
+                                 <option selected="selected">Facile : 50 essais</option>
+                                 <option>Moyen : 25 essais</option>
+                                 <option>Difficile : 10 essais</option>
+                           </select>  
+                              <label>Nombre d'essai : </label>
+                              <label id="nb_essai"></label>                                                                           
+                   </ul>
+           </nav>         
+   </div>
+</header>
+
+<!-- Corps -->
+<body>
+   <div id="jeu"> 
+      <h1>Saisissez un prix entre 0 et 1000€.
+         <input type="number" class="number" id="prixSaisie" name="prixSaisie" min="0" max="1000">
+      </h1>
+
+      <div>
+         <h1>Réponse : <label id="resultat"></label> </h1>         
+      </div>  
+
+      <div id="article">
+         <div>
+            <h1 class="info_article">Devinez le prix de ce truc là !</h1>
+            <labels class="info_article" id="description"></labels>      
+         </div>
+      </div>   
+      <div id="div_img_article"></div>  
+   </div> 
+   
+   <div id="gagne">
+      <div class="message">
+         <h1>Durée de la partie : <label id="tps_partie"></label> secondes</h1>         
+      </div> 
+
+      <img src="/static/gagne.png" id="img_gagne" width="0" height="0">      
+   </div>
+
+   <div id="perdu">
+      <div class="message">
+         <h1> Perdu !</h1>         
+      </div> 
+      <img src="/static/perdu.jpg" id="img_perdu" width="0" height="0">
+   </div>   
+</body> 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="/static/justePrix.js"></script>

@@ -1,0 +1,165 @@
+/* Page web */
+body { 
+    /*background-color: #17171b; */
+    background-image:url(/static/fondEcran.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+h1 {
+  font-size: 22px;
+}
+/*---//
+
+
+/* Nav */ 
+.main-header {
+    margin-top: 0rem;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background: #082c44;
+    z-index : 10;
+    border-width : 1px;
+    border-style : solid;
+    border-color :  rgb(255, 255, 255);
+  }
+  .main-header:hover
+  {  
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+  
+  .header-logo {
+    height : 45px;
+    width : 45px;
+  }
+  
+  #titre_juste_prix {
+    margin-bottom: 0px;
+    font-size: 27px;
+    font-family : fantasy ;
+    font-weight : normal;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+  
+  #resultat {
+    color: rgb(207, 204, 33);
+  }
+
+  #nb_essai {
+    font-size: 22px;
+    color: rgb(207, 204, 33);
+  }
+  
+    
+  .header-inner {
+    height: 50px;
+      display: table;
+    width: 100%;  
+      margin: 0 auto; /* centre l'élément */
+      padding: 3px 3px; 
+  }
+  .header-inner > * {
+      display: table-cell;
+      vertical-align: middle;
+  }
+  .header-nav {
+      text-align: left;
+  }
+  .header-nav ul,
+  .header-nav li,
+  .header-nav label,
+  .header-nav select {
+      display: inline;
+      list-style: none;
+  }
+  .header-nav a,
+  .header-nav label {
+      position: relative;
+      display: inline-block;
+      padding: 8px 20px;
+      vertical-align: middle;
+      font-weight: 300; 
+      letter-spacing: 0.05em;
+      color: inherit;
+      text-decoration: none;
+  }
+  /*-----*/
+  
+  /* Animation */
+  /* Animation du lien */
+  .header-nav a:after {
+      content: "";
+      position: absolute;
+      bottom: 0; right: 20px; left: 20px;
+      height: 2px;
+      background-color: rgb(207, 204, 33);
+  
+      /* Préparation de l'animation */
+      opacity: 0;
+      transform: translateY(5px);
+      transition: all .7s;
+  }
+  /* Le trait remonte et apparait */
+  .header-nav a:hover:after,
+  .header-nav a:focus:after {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .header-nav a:focus {
+      outline: none;
+  }
+  
+  .main-header {
+      position: sticky;
+      top: 0;
+  }
+  /*-----*/
+
+  /* Article ! */
+  #article {
+    margin-top : 1%;
+    margin-left : 10%;
+    margin-right : 10%;
+    opacity: 0.8;
+    background-color: #082c44;
+    border-width : 1px;
+    border-style : solid;
+    border-color :  rgb(255, 255, 255);
+    padding: 5px;
+  }
+  #article:hover
+  {  
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+  .info_article{
+    text-align: center;
+  }
+  #div_img_article {
+    margin : 1%;
+    margin-left : 35%;
+    margin-right : 35%;
+  }
+  #img_article, #img_perdu{
+    box-shadow: 10px 10px 10px rgb(41, 38, 38);
+  }
+
+  /* Gagné ! */
+  #gagne{
+    margin-left : 25%;
+    margin-right : 25%;
+  }
+  .message{
+    margin-left : -5%;
+    margin-right : 5%;
+  }
+  /* Perdu ! */
+  #perdu {
+    margin-top : 10%;
+    margin-left : 10%;
+  }
