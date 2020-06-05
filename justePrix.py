@@ -117,7 +117,7 @@ class InterfaceWeb():
             return jsonify({'resultat': resultat, 'tpsPartie': round(tpsPartie, 2)})
 
     # Lancement de l'appli serveur
-        app.run(debug=True)
+        app.run(host="0.0.0.0", debug=True)
 # ------------------------------------------------------------------------
 if __name__ == "__main__":
     InterfaceWeb()
